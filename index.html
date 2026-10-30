@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ويكي</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="login"><div id="lg"></div><h1>ويكي</h1><p>دردش ويا أصدقائك وسوّي ملصقاتك</p>
+<div class="card"><input id="nm" placeholder="الاسم"><input id="us" placeholder="اسم المستخدم" dir="ltr" style="text-align:right"><div id="err"></div><button class="btn" id="go">دخول</button></div></div>
+<div id="app">
+<header><span id="lg2"></span><b>ويكي</b><small id="who"></small></header>
+<main>
+<section id="t0">
+<div class="note" id="note">انقطع الاتصال، جاري إعادة المحاولة...</div>
+<button class="item" id="pub"><div class="av">🌍</div><div><span>الغرفة العامة</span><i>الكل يكدر يكتب هنا</i></div></button>
+<h3>الأصدقاء</h3>
+<div class="row"><input id="fu" placeholder="أضف صديق باسم المستخدم" dir="ltr" style="text-align:right"><button class="btn" id="fa">إضافة</button></div>
+<div id="fl"></div>
+</section>
+<section id="t1" style="display:none">
+<canvas id="cv" width="256" height="256"></canvas>
+<input id="st" placeholder="اكتب نص الملصق" style="margin-bottom:10px">
+<div class="sw" id="em"></div><div class="sw" id="cl"></div>
+<div class="row"><label class="btn" style="flex:1;text-align:center">صورة<input id="im" type="file" accept="image/*" hidden></label><button class="btn" id="sv" style="flex:1">حفظ الملصق</button></div>
+<h3>ملصقاتي</h3><div class="gal" id="gal"></div>
+</section>
+</main>
+<nav><button class="on" data-t="0">الدردشات</button><button data-t="1">الملصقات</button></nav>
+</div>
+<div id="chat">
+<header><button id="bk">→</button><b id="ct"></b></header>
+<div id="msgs"></div><div id="tray"></div>
+<div id="bar"><button id="sb">🎨</button><input id="tx" placeholder="اكتب رسالة"><button class="btn" id="sd">إرسال</button></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
